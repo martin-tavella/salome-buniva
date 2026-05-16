@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #A07850;
+  --color-secondary: #A8998A;
+  --color-accent: #6B5744;
+  --color-bg-navbar: #FBF8F4;
+
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+  body {
+    font-family: var(--font-dm-sans);
+  }
+}
