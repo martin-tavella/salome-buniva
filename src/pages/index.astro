@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <html lang="es">
@@ -11,9 +12,11 @@ import Navbar from '../components/Navbar.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>Dra. Salomé Buniva - Odontología Integral</title>
 	</head>
-	<body class="bg-[#FBF8F4]">
+	<body class="bg-[#FBF8F4] overflow-x-hidden">
 		<Navbar />
-		<main class="pt-32 px-6">
+		<main>
+			<Hero />
+			<!-- Other sections will go here -->
 		</main>
 	</body>
 </html>

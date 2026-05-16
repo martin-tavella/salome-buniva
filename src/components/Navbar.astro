@@ -1,7 +1,7 @@
 ---
 ---
 
-<nav class="fixed top-0 left-0 w-full z-50 bg-[#FBF8F4]/90 backdrop-blur-md border-b border-[#A8998A]/10 px-6 py-4">
+<nav class="fixed top-0 left-0 w-full z-[100] bg-[#FBF8F4]/95 backdrop-blur-md border-b border-[#A8998A]/10 px-6 py-3 md:py-4">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
     <!-- Logo & Title Section -->
     <div class="flex items-center gap-4">
@@ -52,7 +52,7 @@
   </div>
 
   <!-- Mobile Menu Overlay -->
-  <div id="mobile-menu" class="fixed inset-0 top-[80px] bg-white z-50 lg:hidden flex flex-col transform -translate-y-10 opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
+  <div id="mobile-menu" class="fixed inset-0 top-[65px] bg-white z-[90] lg:hidden flex flex-col transform -translate-y-10 opacity-0 pointer-events-none transition-all duration-300 ease-in-out">
     <div class="flex flex-col px-6 py-4 flex-1">
       {["Tratamientos", "Nosotros", "Equipo", "Resultados", "Consultorios"].map((item) => (
         <a 
@@ -86,12 +86,12 @@
       // Close
       menu?.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
       menu?.classList.add('-translate-y-10', 'opacity-0', 'pointer-events-none');
-      document.body.classList.remove('overflow-hidden');
+      document.body.style.overflow = 'auto';
     } else {
       // Open
       menu?.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
       menu?.classList.remove('-translate-y-10', 'opacity-0', 'pointer-events-none');
-      document.body.classList.add('overflow-hidden');
+      document.body.style.overflow = 'hidden';
     }
   });
 
